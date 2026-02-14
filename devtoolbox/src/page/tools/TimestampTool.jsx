@@ -1,4 +1,6 @@
 import { useState } from "react";
+import OtherTools from "../../components/OtherTools";
+import { useEffect } from "react";
 
 export default function TimestampTool() {
   const [timestamp, setTimestamp] = useState("");
@@ -41,10 +43,25 @@ export default function TimestampTool() {
     setDate("");
     setResult("");
   };
+useEffect(() => {
+  document.title = "Unix Timestamp Converter Online | DevToolBox";
+
+  const metaDescription = document.querySelector('meta[name="description"]');
+  if (metaDescription) {
+    metaDescription.setAttribute(
+      "content",
+      "Convert Unix timestamps to readable dates and convert dates to timestamps instantly with our free online timestamp converter."
+    );
+  }
+}, []);
 
   return (
     <div className="container py-5">
       <h2 className="mb-4">Timestamp Converter</h2>
+        <p className="text-muted mb-4">
+        This Timestamp Converter allows you to convert Unix timestamps to readable dates 
+        and convert dates back to timestamps instantly. Useful for debugging and backend development.
+        </p>
 
       <div className="card shadow-sm">
         <div className="card-body">
@@ -101,6 +118,7 @@ export default function TimestampTool() {
 
         </div>
       </div>
+      <OtherTools></OtherTools>
     </div>
   );
 }

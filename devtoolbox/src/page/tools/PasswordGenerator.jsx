@@ -1,4 +1,7 @@
 import { useState } from "react";
+import OtherTools from "../../components/OtherTools";
+import { useEffect } from "react";
+
 
 export default function PasswordGenerator() {
   const [length, setLength] = useState(12);
@@ -20,6 +23,17 @@ export default function PasswordGenerator() {
     if (!password) return;
     await navigator.clipboard.writeText(password);
   };
+  useEffect(() => {
+  document.title = "Password Generator Online — Create Secure Passwords | DevToolBox";
+
+  const metaDescription = document.querySelector('meta[name="description"]');
+  if (metaDescription) {
+    metaDescription.setAttribute(
+      "content",
+      "Generate strong and secure passwords instantly with our free online password generator. Customize length and improve security."
+    );
+  }
+}, []);
 
   return (
     <div className="row g-4">
@@ -29,6 +43,10 @@ export default function PasswordGenerator() {
           <div className="card-body">
 
             <h4>Password Generator</h4>
+            <p className="text-muted mb-4">
+              This Password Generator helps you create strong and secure passwords instantly. 
+              Use it to improve account security with random and customizable passwords.
+            </p>
 
             <label className="form-label mt-3">
               Length: {length}
@@ -77,7 +95,7 @@ export default function PasswordGenerator() {
           </div>
         </div>
       </div>
-
+      <OtherTools></OtherTools>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-
+import OtherTools from "../../components/OtherTools";
+import { useEffect } from "react";
 
 export default function ColorConverter() {
   const [hex, setHex] = useState("#fb1818");
@@ -83,6 +84,17 @@ export default function ColorConverter() {
       setHex("Invalid RGB");
     }
   };
+  useEffect(() => {
+  document.title = "HEX to RGB Color Converter Online | DevToolBox";
+
+  const metaDescription = document.querySelector('meta[name="description"]');
+  if (metaDescription) {
+    metaDescription.setAttribute(
+      "content",
+      "Convert HEX to RGB and RGB to HEX instantly with our free online color converter. Perfect for developers and designers."
+    );
+  }
+}, []);
 
   return (
     <div className="row g-4">
@@ -93,6 +105,10 @@ export default function ColorConverter() {
           <div className="card-body">
 
             <h4>Color Converter</h4>
+            <p className="text-muted mb-4">
+            This Color Converter lets you quickly convert HEX colors to RGB and RGB to HEX. 
+            Perfect for web developers and designers working with color values.
+            </p>
 
             <label className="mt-3">HEX</label>
             <div className="d-flex gap-2">
@@ -168,7 +184,7 @@ export default function ColorConverter() {
           </div>
         </div>
       </div>
-
+    <OtherTools></OtherTools>
     </div>
   );
 }

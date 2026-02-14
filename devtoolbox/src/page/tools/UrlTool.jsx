@@ -1,4 +1,7 @@
 import { useState } from "react";
+import OtherTools from "../../components/OtherTools";
+import { useEffect } from "react";
+
 
 export default function UrlTool() {
   const [input, setInput] = useState("");
@@ -29,10 +32,25 @@ export default function UrlTool() {
     if (!output) return;
     await navigator.clipboard.writeText(output);
   };
+  useEffect(() => {
+  document.title = "URL Encoder & Decoder Online | DevToolBox";
+
+  const metaDescription = document.querySelector('meta[name="description"]');
+  if (metaDescription) {
+    metaDescription.setAttribute(
+      "content",
+      "Encode and decode URLs instantly with our free online URL encoder and decoder tool. Fast, simple, and developer-friendly."
+    );
+  }
+}, []);
 
   return (
     <div className="container py-5">
       <h2 className="mb-4">URL Encoder / Decoder</h2>
+      <p className="text-muted mb-4">
+      This URL Encoder and Decoder helps you convert text into URL-safe format 
+      and decode encoded URLs instantly. Useful for web development and debugging.
+      </p>
 
       <div className="card shadow-sm">
         <div className="card-body">
@@ -74,6 +92,7 @@ export default function UrlTool() {
 
         </div>
       </div>
+      <OtherTools></OtherTools>
     </div>
   );
 }

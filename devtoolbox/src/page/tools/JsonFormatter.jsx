@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { useEffect } from "react";
+import OtherTools from "../../components/OtherTools";
+
 
 export default function JsonFormatter() {
   const [input, setInput] = useState("");
@@ -28,11 +31,28 @@ export default function JsonFormatter() {
     setOutput("");
   };
 
+  useEffect(() => {
+  document.title = "JSON Formatter Online — Beautify & Validate JSON | DevToolBox";
+
+  const metaDescription = document.querySelector('meta[name="description"]');
+  if (metaDescription) {
+    metaDescription.setAttribute(
+      "content",
+      "Format, validate, and beautify JSON instantly with our free online JSON formatter. Perfect for developers and debugging."
+    );
+  }
+}, []);
+
+
+
   return (
     <div>
 
       <h2 className="mb-4 fw-bold">JSON Formatter</h2>
-
+      <p className="text-muted mb-4">
+        This JSON Formatter helps developers format, validate, and beautify JSON data instantly. 
+        Paste your JSON and get clean structured output for better readability and debugging.
+      </p>
       <div className="row g-4">
 
         {/* INPUT */}
@@ -89,6 +109,7 @@ export default function JsonFormatter() {
         </div>
 
       </div>
+      <OtherTools></OtherTools>
     </div>
   );
 }

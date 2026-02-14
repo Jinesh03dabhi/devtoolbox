@@ -1,4 +1,6 @@
 import { useState } from "react";
+import OtherTools from "../../components/OtherTools";
+import { useEffect } from "react";
 
 export default function JwtDecoder() {
   const [token, setToken] = useState("");
@@ -35,10 +37,25 @@ export default function JwtDecoder() {
     if (!text) return;
     await navigator.clipboard.writeText(text);
   };
+  useEffect(() => {
+  document.title = "JWT Decoder Online — Inspect JSON Web Tokens | DevToolBox";
+
+  const metaDescription = document.querySelector('meta[name="description"]');
+  if (metaDescription) {
+    metaDescription.setAttribute(
+      "content",
+      "Decode JSON Web Tokens instantly with our free JWT decoder. Inspect header and payload securely for debugging and development."
+    );
+  }
+}, []);
 
   return (
     <div className="container py-5">
       <h2 className="mb-4">JWT Decoder</h2>
+      <p className="text-muted mb-4">
+      This JWT Decoder helps you inspect JSON Web Tokens by decoding header and payload instantly. 
+      Useful for debugging authentication and API integrations.
+      </p>
 
       <div className="card shadow-sm">
         <div className="card-body">
@@ -86,6 +103,7 @@ export default function JwtDecoder() {
 
         </div>
       </div>
+      <OtherTools></OtherTools>
     </div>
   );
 }

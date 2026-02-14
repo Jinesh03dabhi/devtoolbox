@@ -1,4 +1,6 @@
 import { useState } from "react";
+import OtherTools from "../../components/OtherTools";
+import { useEffect } from "react";
 
 export default function Base64Tool() {
   const [input, setInput] = useState("");
@@ -30,6 +32,18 @@ export default function Base64Tool() {
     await navigator.clipboard.writeText(output);
   };
 
+  useEffect(() => {
+  document.title = "Base64 Encoder & Decoder Online | DevToolBox";
+
+  const metaDescription = document.querySelector('meta[name="description"]');
+  if (metaDescription) {
+    metaDescription.setAttribute(
+      "content",
+      "Encode and decode Base64 instantly with our free online Base64 encoder and decoder tool. Fast, simple, and secure."
+    );
+  }
+}, []);
+
   return (
     <div className="row g-4">
 
@@ -39,6 +53,10 @@ export default function Base64Tool() {
           <div className="card-body">
 
             <h4>Base64 Encode / Decode</h4>
+            <p className="text-muted mb-4">
+            This Base64 Encoder and Decoder tool allows you to quickly convert text to Base64 
+            and decode Base64 back to readable text. Useful for encoding data and debugging.
+            </p>
 
             <textarea
               className="form-control mt-3 fs-5"
@@ -92,7 +110,8 @@ export default function Base64Tool() {
           </div>
         </div>
       </div>
-
+    <OtherTools></OtherTools>
     </div>
+    
   );
 }
