@@ -11,6 +11,7 @@ import Contact from "./page/Contact";
 import Footer from "./components/Footer";
 import UrlTool from "./page/tools/UrlTool";
 import TimestampTool from "./page/tools/TimestampTool";
+import JwtDecoder from "./page/tools/JwtDecoder";
 
 
 
@@ -35,6 +36,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/url-encoder-decoder" element={<UrlTool />} />
             <Route path="/timestamp-converter" element={<TimestampTool />} />
+            <Route path="/jwt-decoder" element={<JwtDecoder />} />
 
           </Routes>
           <Footer />

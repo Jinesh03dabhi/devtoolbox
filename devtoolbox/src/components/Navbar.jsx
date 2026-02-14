@@ -21,12 +21,14 @@ export default function Navbar() {
           Color Converter
         </Link>
         <Link className="nav-link" to="/url-encoder-decoder">
-          url encoder-decoder
+          URL Encoder / Decoder
         </Link>
         <Link className="nav-link" to="/timestamp-converter">
           Timestamp Converter
         </Link>
-
+        <Link className="nav-link" to="/jwt-decoder">
+          JWT Decoder
+        </Link>
       </div>
     </nav>
   );

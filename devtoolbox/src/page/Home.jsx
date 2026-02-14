@@ -99,6 +99,22 @@ export default function Home() {
           </Link>
         </div>
 
+        
+        {/* JWT Decoder */}
+        <div className="col-md-6 col-lg-6">
+          <Link to="/jwt-decoder" className="text-decoration-none text-dark">
+            <div className="card shadow-sm h-100">
+              <div className="card-body">
+                <h5>JWT Decoder</h5>
+                <p className="text-muted">
+                  Decode JSON Web Tokens and inspect payload instantly.
+                </p>
+              </div>
+            </div>
+          </Link>
+        </div>
+
+
 
       </div>
 

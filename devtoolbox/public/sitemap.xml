@@ -41,5 +41,10 @@
   <url>
     <loc>https://devtoolbox-dun.vercel.app/timestamp-converter</loc>
   </url>
+  
+  <url>
+    <loc>https://devtoolbox-dun.vercel.app/jwt-decoder</loc>
+  </url>
+
 
 </urlset>
