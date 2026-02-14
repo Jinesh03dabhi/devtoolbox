@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div>
+    <div className="container py-5">
+
 
       <div className="text-center mb-5">
         <h1 className="fw-bold">DevToolBox</h1>

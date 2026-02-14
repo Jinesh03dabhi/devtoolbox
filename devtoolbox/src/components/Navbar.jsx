@@ -20,7 +20,6 @@ export default function Navbar() {
         <Link className="nav-link" to="/color">
           Color Converter
         </Link>
-        <Link to="/privacy">Privacy Policy</Link>
 
       </div>
     </nav>
