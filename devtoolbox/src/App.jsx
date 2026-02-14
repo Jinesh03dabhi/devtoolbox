@@ -24,10 +24,10 @@ function App() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/json" element={<JsonFormatter />} />
-            <Route path="/password" element={<PasswordGenerator />} />
-            <Route path="/base64" element={<Base64Tool />} />
-            <Route path="/color" element={<ColorConverter />} />
+            <Route path="/json-formatter" element={<JsonFormatter />} />
+            <Route path="/password-generator" element={<PasswordGenerator />} />
+            <Route path="/base64-tool" element={<Base64Tool />} />
+            <Route path="/color-converter" element={<ColorConverter />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />

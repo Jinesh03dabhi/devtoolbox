@@ -7,19 +7,19 @@
   </url>
 
   <url>
-    <loc>https://devtoolbox-dun.vercel.app/json</loc>
+    <loc>https://devtoolbox-dun.vercel.app/json-formatter</loc>
   </url>
 
   <url>
-    <loc>https://devtoolbox-dun.vercel.app/password</loc>
+    <loc>https://devtoolbox-dun.vercel.app/password-generator</loc>
   </url>
 
   <url>
-    <loc>https://devtoolbox-dun.vercel.app/base64</loc>
+    <loc>https://devtoolbox-dun.vercel.app/base64-tool</loc>
   </url>
 
   <url>
-    <loc>https://devtoolbox-dun.vercel.app/color</loc>
+    <loc>https://devtoolbox-dun.vercel.app/color-converter</loc>
   </url>
 
 </urlset>

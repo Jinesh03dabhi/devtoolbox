@@ -8,16 +8,16 @@ export default function Navbar() {
       </Link>
 
       <div className="navbar-nav">
-        <Link className="nav-link" to="/json">
+        <Link className="nav-link" to="/json-formatter">
           JSON Formatter
         </Link>
-        <Link className="nav-link" to="/password">
+        <Link className="nav-link" to="/password-generator">
           Password Generator
         </Link>
-        <Link className="nav-link" to="/base64">
+        <Link className="nav-link" to="/base64-tool">
           Base64 Tool
         </Link>
-        <Link className="nav-link" to="/color">
+        <Link className="nav-link" to="/color-converter">
           Color Converter
         </Link>
 
