@@ -22,4 +22,16 @@
     <loc>https://devtoolbox-dun.vercel.app/color-converter</loc>
   </url>
 
+  <url>
+    <loc>https://devtoolbox-dun.vercel.app/about</loc>
+  </url>
+
+  <url>
+    <loc>https://devtoolbox-dun.vercel.app/privacy</loc>
+  </url>
+
+  <url>
+    <loc>https://devtoolbox-dun.vercel.app/contact</loc>
+  </url>
+
 </urlset>
