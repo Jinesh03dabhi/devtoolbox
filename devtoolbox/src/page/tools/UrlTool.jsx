@@ -59,7 +59,7 @@ export default function UrlTool() {
   }}
 />
 
-      <h2 className="mb-4">URL Encoder / Decoder</h2>
+      <h2 className="mb-4 fw-bold">URL Encoder / Decoder</h2>
       <p className="text-muted mb-4">
       This URL Encoder and Decoder helps you convert text into URL-safe format 
       and decode encoded URLs instantly. Useful for web development and debugging.

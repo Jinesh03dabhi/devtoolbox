@@ -65,7 +65,7 @@ export default function JwtDecoder() {
   }}
 />
 
-      <h2 className="mb-4">JWT Decoder</h2>
+      <h2 className="mb-4 fw-bold">JWT Decoder</h2>
       <p className="text-muted mb-4">
       This JWT Decoder helps you inspect JSON Web Tokens by decoding header and payload instantly. 
       Useful for debugging authentication and API integrations.

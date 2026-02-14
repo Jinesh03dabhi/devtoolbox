@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import OtherTools from "../../components/OtherTools";
-import Schema from "../components/Schema";
+import Schema from "../../components/Schema";
 
 
 export default function JsonFormatter() {
@@ -47,7 +47,7 @@ export default function JsonFormatter() {
 
 
   return (
-    <div>
+    <div className="container py-5">
 
       <h2 className="mb-4 fw-bold">JSON Formatter</h2>
       <p className="text-muted mb-4">

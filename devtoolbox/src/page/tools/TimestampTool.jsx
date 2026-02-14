@@ -71,7 +71,7 @@ useEffect(() => {
   }}
 />
 
-      <h2 className="mb-4">Timestamp Converter</h2>
+      <h2 className="mb-4 fw-bold">Timestamp Converter</h2>
         <p className="text-muted mb-4">
         This Timestamp Converter allows you to convert Unix timestamps to readable dates 
         and convert dates back to timestamps instantly. Useful for debugging and backend development.

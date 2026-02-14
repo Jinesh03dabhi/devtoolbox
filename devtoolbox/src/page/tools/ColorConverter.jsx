@@ -99,7 +99,7 @@ export default function ColorConverter() {
 }, []);
 
   return (
-    <div className="row g-4">
+    <div className=" py-5 row g-4">
       <Schema
   data={{
     "@context": "https://schema.org",
@@ -113,16 +113,15 @@ export default function ColorConverter() {
   }}
 />
 
+      <h2 className="mb-4 fw-bold">Color Converter</h2>
+      <p className="text-muted mb-4">
+      This Color Converter lets you quickly convert HEX colors to RGB and RGB to HEX. 
+      Perfect for web developers and designers working with color values.
+      </p>
       {/* INPUT */}
       <div className="col-lg-6">
         <div className="card shadow-sm">
           <div className="card-body">
-
-            <h4>Color Converter</h4>
-            <p className="text-muted mb-4">
-            This Color Converter lets you quickly convert HEX colors to RGB and RGB to HEX. 
-            Perfect for web developers and designers working with color values.
-            </p>
 
             <label className="mt-3">HEX</label>
             <div className="d-flex gap-2">

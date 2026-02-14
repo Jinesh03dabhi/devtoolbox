@@ -1,7 +1,7 @@
 import { useState } from "react";
 import OtherTools from "../../components/OtherTools";
 import { useEffect } from "react";
-import Schema from "../components/Schema";
+import Schema from "../../components/Schema";
 
 export default function Base64Tool() {
   const [input, setInput] = useState("");
@@ -46,7 +46,7 @@ export default function Base64Tool() {
 }, []);
 
   return (
-    <div className="row g-4">
+    <div className="py-5 row g-4">
       <Schema
         data={{
           "@context": "https://schema.org",
@@ -59,17 +59,17 @@ export default function Base64Tool() {
             "Encode and decode Base64 strings instantly online.",
         }}
       />
-
+      <h2 className="mb-4 fw-bold">Base64 Encode / Decode</h2>
+      <p className="text-muted mb-4">
+      This Base64 Encoder and Decoder tool allows you to quickly convert text to Base64 
+      and decode Base64 back to readable text. Useful for encoding data and debugging.
+      </p>
       {/* INPUT */}
       <div className="col-lg-6">
         <div className="card shadow-sm">
           <div className="card-body">
 
-            <h4>Base64 Encode / Decode</h4>
-            <p className="text-muted mb-4">
-            This Base64 Encoder and Decoder tool allows you to quickly convert text to Base64 
-            and decode Base64 back to readable text. Useful for encoding data and debugging.
-            </p>
+            
 
             <textarea
               className="form-control mt-3 fs-5"

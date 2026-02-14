@@ -36,7 +36,7 @@ export default function PasswordGenerator() {
 }, []);
 
   return (
-    <div className="row g-4">
+    <div className=" py-5 row g-4">
       <Schema
         data={{
           "@context": "https://schema.org",
@@ -49,17 +49,16 @@ export default function PasswordGenerator() {
             "Generate secure random passwords instantly online.",
         }}
       />
-
+      <h2 className="mb-4 fw-bold">Password Generator</h2>
+      <p className="text-muted mb-4">
+        This Password Generator helps you create strong and secure passwords instantly. 
+        Use it to improve account security with random and customizable passwords.
+      </p>
       <div className="col-lg-6">
+        
         <div className="card shadow-sm">
+          
           <div className="card-body">
-
-            <h4>Password Generator</h4>
-            <p className="text-muted mb-4">
-              This Password Generator helps you create strong and secure passwords instantly. 
-              Use it to improve account security with random and customizable passwords.
-            </p>
-
             <label className="form-label mt-3">
               Length: {length}
             </label>
