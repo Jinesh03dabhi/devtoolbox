@@ -5,6 +5,7 @@ import JsonFormatter from "./page/tools/JsonFormatter";
 import PasswordGenerator from "./page/tools/PasswordGenerator";
 import Base64Tool from "./page/tools/Base64Tool";
 import ColorConverter from "./page/tools/ColorConverter";
+import Privacy from "./page/Privacy";
 
 
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="/password" element={<PasswordGenerator />} />
             <Route path="/base64" element={<Base64Tool />} />
             <Route path="/color" element={<ColorConverter />} />
+            <Route path="/privacy" element={<Privacy />} />
 
           </Routes>
         </div>
