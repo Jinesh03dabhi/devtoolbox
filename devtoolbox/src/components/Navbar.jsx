@@ -20,6 +20,9 @@ export default function Navbar() {
         <Link className="nav-link" to="/color-converter">
           Color Converter
         </Link>
+        <Link className="nav-link" to="/url-encoder-decoder">
+          url encoder-decoder
+        </Link>
 
       </div>
     </nav>
