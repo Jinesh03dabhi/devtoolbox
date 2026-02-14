@@ -70,6 +70,8 @@ export default function Home() {
           </Link>
         </div>
 
+
+        {/* URL Encoder / Decoder */}
         <div className="col-md-6 col-lg-6">
           <Link to="/url-encoder-decoder" className="text-decoration-none text-dark">
             <div className="card shadow-sm h-100 hover-shadow">
@@ -83,6 +85,19 @@ export default function Home() {
           </Link>
         </div>
 
+        {/* Timestamp Converter */}
+        <div className="col-md-6 col-lg-6">
+          <Link to="/timestamp-converter" className="text-decoration-none text-dark">
+            <div className="card shadow-sm h-100">
+              <div className="card-body">
+                <h5>Timestamp Converter</h5>
+                <p className="text-muted">
+                  Convert Unix timestamps to date and vice versa.
+                </p>
+              </div>
+            </div>
+          </Link>
+        </div>
 
 
       </div>

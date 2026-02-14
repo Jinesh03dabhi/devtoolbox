@@ -10,6 +10,7 @@ import About from "./page/About";
 import Contact from "./page/Contact";
 import Footer from "./components/Footer";
 import UrlTool from "./page/tools/UrlTool";
+import TimestampTool from "./page/tools/TimestampTool";
 
 
 
@@ -33,6 +34,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/url-encoder-decoder" element={<UrlTool />} />
+            <Route path="/timestamp-converter" element={<TimestampTool />} />
 
           </Routes>
           <Footer />

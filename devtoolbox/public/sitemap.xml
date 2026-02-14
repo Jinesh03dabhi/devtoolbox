@@ -37,5 +37,9 @@
   <url>
     <loc>https://devtoolbox-dun.vercel.app/url-encoder-decoder</loc>
   </url>
+  
+  <url>
+    <loc>https://devtoolbox-dun.vercel.app/timestamp-converter</loc>
+  </url>
 
 </urlset>

@@ -23,6 +23,9 @@ export default function Navbar() {
         <Link className="nav-link" to="/url-encoder-decoder">
           url encoder-decoder
         </Link>
+        <Link className="nav-link" to="/timestamp-converter">
+          Timestamp Converter
+        </Link>
 
       </div>
     </nav>
