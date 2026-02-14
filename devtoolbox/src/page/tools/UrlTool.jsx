@@ -1,7 +1,7 @@
 import { useState } from "react";
 import OtherTools from "../../components/OtherTools";
 import { useEffect } from "react";
-
+import Schema from "../../components/Schema";
 
 export default function UrlTool() {
   const [input, setInput] = useState("");
@@ -46,6 +46,19 @@ export default function UrlTool() {
 
   return (
     <div className="container py-5">
+      <Schema
+  data={{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "URL Encoder Decoder",
+    url: "https://devtoolbox-dun.vercel.app/url-encoder-decoder",
+    applicationCategory: "DeveloperApplication",
+    operatingSystem: "All",
+    description:
+      "Encode and decode URLs instantly online.",
+  }}
+/>
+
       <h2 className="mb-4">URL Encoder / Decoder</h2>
       <p className="text-muted mb-4">
       This URL Encoder and Decoder helps you convert text into URL-safe format 

@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import OtherTools from "../../components/OtherTools";
+import Schema from "../../components/Schema";
+
+
 
 export default function ColorConverter() {
   const [hex, setHex] = useState("#fb1818");
@@ -97,6 +100,18 @@ export default function ColorConverter() {
 
   return (
     <div className="row g-4">
+      <Schema
+  data={{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Color Converter",
+    url: "https://devtoolbox-dun.vercel.app/color-converter",
+    applicationCategory: "DeveloperApplication",
+    operatingSystem: "All",
+    description:
+      "Convert HEX, RGB and color formats instantly online.",
+  }}
+/>
 
       {/* INPUT */}
       <div className="col-lg-6">

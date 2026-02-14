@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import OtherTools from "../../components/OtherTools";
+import Schema from "../components/Schema";
 
 
 export default function JsonFormatter() {
@@ -110,6 +111,20 @@ export default function JsonFormatter() {
 
       </div>
       <OtherTools></OtherTools>
+      <Schema
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          name: "JSON Formatter",
+          url: "https://devtoolbox-dun.vercel.app/json-formatter",
+          applicationCategory: "DeveloperApplication",
+          operatingSystem: "All",
+          description:
+            "Format, beautify and validate JSON instantly online with DevToolBox.",
+        }}
+      />
+
     </div>
+    
   );
 }

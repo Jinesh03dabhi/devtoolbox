@@ -1,6 +1,7 @@
 import { useState } from "react";
 import OtherTools from "../../components/OtherTools";
 import { useEffect } from "react";
+import Schema from "../components/Schema";
 
 export default function Base64Tool() {
   const [input, setInput] = useState("");
@@ -46,6 +47,18 @@ export default function Base64Tool() {
 
   return (
     <div className="row g-4">
+      <Schema
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          name: "Base64 Encoder Decoder",
+          url: "https://devtoolbox-dun.vercel.app/base64-tool",
+          applicationCategory: "DeveloperApplication",
+          operatingSystem: "All",
+          description:
+            "Encode and decode Base64 strings instantly online.",
+        }}
+      />
 
       {/* INPUT */}
       <div className="col-lg-6">

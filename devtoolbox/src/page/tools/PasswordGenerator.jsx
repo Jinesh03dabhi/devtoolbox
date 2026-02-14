@@ -1,7 +1,7 @@
 import { useState } from "react";
 import OtherTools from "../../components/OtherTools";
 import { useEffect } from "react";
-
+import Schema from "../../components/Schema";
 
 export default function PasswordGenerator() {
   const [length, setLength] = useState(12);
@@ -37,6 +37,18 @@ export default function PasswordGenerator() {
 
   return (
     <div className="row g-4">
+      <Schema
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          name: "Password Generator",
+          url: "https://devtoolbox-dun.vercel.app/password-generator",
+          applicationCategory: "SecurityApplication",
+          operatingSystem: "All",
+          description:
+            "Generate secure random passwords instantly online.",
+        }}
+      />
 
       <div className="col-lg-6">
         <div className="card shadow-sm">

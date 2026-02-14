@@ -1,6 +1,7 @@
 import { useState } from "react";
 import OtherTools from "../../components/OtherTools";
 import { useEffect } from "react";
+import Schema from "../../components/Schema";
 
 export default function TimestampTool() {
   const [timestamp, setTimestamp] = useState("");
@@ -57,6 +58,19 @@ useEffect(() => {
 
   return (
     <div className="container py-5">
+        <Schema
+  data={{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Timestamp Converter",
+    url: "https://devtoolbox-dun.vercel.app/timestamp-converter",
+    applicationCategory: "DeveloperApplication",
+    operatingSystem: "All",
+    description:
+      "Convert Unix timestamps to human readable date instantly.",
+  }}
+/>
+
       <h2 className="mb-4">Timestamp Converter</h2>
         <p className="text-muted mb-4">
         This Timestamp Converter allows you to convert Unix timestamps to readable dates 

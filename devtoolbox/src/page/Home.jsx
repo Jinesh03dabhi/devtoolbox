@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import Schema from "../components/Schema";
+
 
 export default function Home() {
   useEffect(() => {
@@ -16,6 +18,16 @@ export default function Home() {
 
   return (
     <div className="container py-5">
+      <Schema
+  data={{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "DevToolBox",
+    url: "https://devtoolbox-dun.vercel.app/",
+    description:
+      "Free online developer utilities including JSON formatter, password generator, Base64 encoder and more.",
+  }}
+/>
 
 
       <div className="text-center mb-5">
