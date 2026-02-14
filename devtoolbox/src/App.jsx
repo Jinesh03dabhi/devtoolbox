@@ -9,6 +9,7 @@ import Privacy from "./page/Privacy";
 import About from "./page/About";
 import Contact from "./page/Contact";
 import Footer from "./components/Footer";
+import UrlTool from "./page/tools/UrlTool";
 
 
 
@@ -31,6 +32,7 @@ function App() {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/url-encoder-decoder" element={<UrlTool />} />
 
           </Routes>
           <Footer />

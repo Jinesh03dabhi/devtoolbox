@@ -70,6 +70,19 @@ export default function Home() {
           </Link>
         </div>
 
+        <div className="col-md-6 col-lg-6">
+          <Link to="/url-encoder-decoder" className="text-decoration-none text-dark">
+            <div className="card shadow-sm h-100 hover-shadow">
+              <div className="card-body">
+                <h5>URL Encoder / Decoder</h5>
+                <p className="text-muted">
+                  Encode and decode URLs instantly.
+                </p>
+              </div>
+            </div>
+          </Link>
+        </div>
+
 
 
       </div>
