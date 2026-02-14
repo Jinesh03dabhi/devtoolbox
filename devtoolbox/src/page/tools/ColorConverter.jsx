@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import OtherTools from "../../components/OtherTools";
-import { useEffect } from "react";
 
 export default function ColorConverter() {
   const [hex, setHex] = useState("#fb1818");

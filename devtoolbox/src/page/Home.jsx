@@ -109,7 +109,7 @@ export default function Home() {
         {/* Timestamp Converter */}
         <div className="col-md-6 col-lg-6">
           <Link to="/timestamp-converter" className="text-decoration-none text-dark">
-            <div className="card shadow-sm h-100">
+            <div className="card shadow-sm h-100 hover-shadow">
               <div className="card-body">
                 <h5>Timestamp Converter</h5>
                 <p className="text-muted">
@@ -124,7 +124,7 @@ export default function Home() {
         {/* JWT Decoder */}
         <div className="col-md-6 col-lg-6">
           <Link to="/jwt-decoder" className="text-decoration-none text-dark">
-            <div className="card shadow-sm h-100">
+            <div className="card shadow-sm h-100 hover-shadow">
               <div className="card-body">
                 <h5>JWT Decoder</h5>
                 <p className="text-muted">
